@@ -47,6 +47,7 @@ main{
      display: flex;
      justify-content: center;
      align-items: flex-end;
+     box-shadow: 2px 2px 3px 3px gray;
 }
 .fabCart{
      border: 0px solid red;
@@ -88,6 +89,13 @@ ul{
 }
 ul div{
      text-align: center;
+     padding: 5px;
+     box-shadow: 3px 3px gray;
+     border-bottom: 1px solid black;
+     border-right: 1px solid black;
+}
+li{
+     /* text-shadow: 1px 1px rgb(53, 52, 52); */
 }
 #loader{
      display: flex;

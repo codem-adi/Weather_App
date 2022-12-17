@@ -12,7 +12,14 @@ detail_minTemp = document.getElementById("detail_minTemp");
 detail_humidity = document.getElementById("detail_humidity");
 detail_sunRise = document.getElementById("detail_sunRise");
 detail_sunSet = document.getElementById("detail_sunSet");
+
+detail_maxTemp.style.color = "red";
+detail_minTemp.style.color = "#87e1f2"
+detail_humidity.style.color = "green"
+detail_sunRise.style.color = "#ff6600"
+detail_sunSet.style.color ="#fed500"
 function get_temp(cityName) {
+     
      document.querySelector("body > main > div > div.details").style.opacity = .2
      loader.style.opacity = 1;
      const options = {
