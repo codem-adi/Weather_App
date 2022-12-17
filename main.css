@@ -1,0 +1,117 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;    
+}
+
+body{
+     height: 100vh;
+}
+nav{
+     height: 8vh;
+}
+main{
+     height: 92vh;
+     display: flex;
+     justify-content: center;
+     background-image: linear-gradient(#999cf5,#3b3ab9);
+     align-items: center;
+     
+}
+.navbar-brand{
+     font-weight: 900;
+     font-size: 25px;
+     margin-left: 2rem;
+}
+.fab_list{
+     border: 2px solid rgb(255, 0, 0);
+     height: 100%;
+}
+.card{
+     width: 300px;
+     height: 550px;
+     border-radius: 20px;
+     background-color: white;
+     overflow: hidden;
+
+}
+.card_image{
+     width: 100%;
+     height: 100%;
+     /* background: red; */
+     border-bottom-left-radius: 30px;
+     border-bottom-right-radius: 30px;
+     background-image: url(ref.png);
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+.fabCart{
+     border: 0px solid red;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     width: 30px;
+     height: 30px;
+     background-color: transparent;
+}
+.fabCart>img{
+     width: 100%;
+     height: 100%;
+}
+
+
+.data_container{
+     font-weight: 900;
+     font-size: larger;
+}
+#city_name_heading{
+     /* text-align: end; */
+     color: white;
+     text-transform: capitalize;
+     
+}
+h1{
+     text-align: center;
+}
+ul{
+     padding: 10px;
+
+     list-style: none;
+}
+ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ul div{
+     text-align: center;
+}
+#loader{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size:25px;
+     font-weight: 900;
+     position: absolute;
+     width: 100%;
+     height: 35%;
+     bottom: 0px;
+
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+     nav {
+          /* transform: scale(.1); */
+          transform: translateY(-48px);
+          margin-left: 8%;
+     }
+}
