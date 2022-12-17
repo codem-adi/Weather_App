@@ -60,10 +60,10 @@ function get_temp(cityName) {
                     }
 
                     // city_name_heading.innerHTML = response.temp;
-                    detail_temp.innerHTML = response.temp;
-                    detail_maxTemp.innerHTML = response.max_temp
-                    detail_minTemp.innerHTML = response.min_temp
-                    detail_humidity.innerHTML = response.humidity
+                    detail_temp.innerHTML = response.temp +"&#8451";
+                    detail_maxTemp.innerHTML = response.max_temp + "&#8451";
+                    detail_minTemp.innerHTML = response.min_temp + "&#8451";
+                    detail_humidity.innerHTML = response.humidity + "%"
                     detail_sunRise.innerHTML = ("0" + sunrise_hrs).substr(-2) + ":" + ("0" + sunrise.getMinutes()).substr(-2);
                     //response.sunrise
                     detail_sunSet.innerHTML = ("0" + sunset_hrs).substr(-2) + ":" + ("0" + sunset.getMinutes()).substr(-2);
