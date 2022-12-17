@@ -6,22 +6,30 @@
 
 body{
      height: 100vh;
+     background-image: linear-gradient(#999cf5, #3b3ab9);
 }
 nav{
+     /* position: fixed; */
+     width: 100%;
+     top: 0px;
      height: 8vh;
+     display: flex;
+     padding: 0px 25px;
+     justify-content: space-between;
+     align-items: center;
+     background-color: white;
 }
 main{
+     /* margin-top: 20px; */
      height: 92vh;
      display: flex;
      justify-content: center;
-     background-image: linear-gradient(#999cf5,#3b3ab9);
      align-items: center;
-     
 }
 .navbar-brand{
      font-weight: 900;
      font-size: 25px;
-     margin-left: 2rem;
+     /* margin-left: 2rem; */
 }
 .fab_list{
      border: 2px solid rgb(255, 0, 0);
@@ -77,12 +85,10 @@ main{
 h1{
      text-align: center;
 }
+
 ul{
      padding: 10px;
-
      list-style: none;
-}
-ul{
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -94,9 +100,7 @@ ul div{
      border-bottom: 1px solid black;
      border-right: 1px solid black;
 }
-li{
-     /* text-shadow: 1px 1px rgb(53, 52, 52); */
-}
+
 #loader{
      display: flex;
      justify-content: center;
@@ -116,10 +120,17 @@ li{
      user-select: none;
 }
 
-@media screen and (max-width: 480px) {
-     nav {
-          /* transform: scale(.1); */
-          transform: translateY(-48px);
-          margin-left: 8%;
+@media screen and (max-width: 510px) {
+     
+
+     nav>form{
+          transform: scale(.8);
      }
+
+          .navbar-brand {
+               font-weight: 500;
+               font-size: 16px;
+               /* margin-left: 2rem; */
+          }
+
 }
